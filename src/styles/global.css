@@ -1,0 +1,29 @@
+*,a{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:  "Helvetica Neue";
+
+}
+
+html,body,.container{
+    background-color: #F7F7F7;
+    width: 100%;
+    height: 100%;
+}
+.container{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: auto;
+    grid-template-rows: 70px 1fr 80px ;
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url(../resources/fonts/Helvetica\ Neue\ LTW0697BlkCnObl.ttf);
+}

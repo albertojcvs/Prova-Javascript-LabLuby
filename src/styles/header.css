@@ -1,0 +1,47 @@
+.header-container {
+  grid-area: 'header';
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid #ebebeb;
+}
+.company-name{
+  position: relative;
+}
+.company-name::before{
+  content: "";
+  height: 1px;
+  width: 90px;
+  position: absolute;
+  bottom: -3px;
+  left: -16px;
+  visibility: visible;
+  background-color: #B5C401;
+  border: 3px solid #B5C401;
+  border-radius: 6px;
+}
+.header-group {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 280px;
+  font-size: 20px;
+  line-height: 70px;
+  color: #707070;
+  font: italic normal bold 20px/70px "Helvetica Neue";
+}
+
+.header-link {
+  color: #707070;
+  position: relative;
+}
+
+.header-link span{
+  margin-right: 8px;
+}
+.header-link:hover span{
+  text-decoration: underline;
+}
+
+

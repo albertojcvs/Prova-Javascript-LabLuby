@@ -1,0 +1,10 @@
+.footer-container{
+    grid-area: 'footer';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #707070;
+    font-size: 15px;
+    font-family: "Helvetica Neue";
+    border-top: 2px solid #ebebeb;
+}
