@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family:  "Helvetica Neue";
+    font-family:  "Helvetica Neue bold";
 
 }
 
@@ -20,10 +20,20 @@ html,body,.container{
     "footer";
     grid-template-columns: auto;
     grid-template-rows: 70px 1fr 80px ;
-    font-weight: normal;
     font-style: italic;
 }
 @font-face {
-    font-family: "Helvetica Neue";
+    font-family: "Helvetica Neue bold";
     src: url(../resources/fonts/Helvetica\ Neue\ LTW0697BlkCnObl.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Helvetica Neue lighter";
+    src: url("../resources/fonts/Helvetica\ Neue\ UltraLight.ttf");
+    font-weight: lighter;
+}
+@font-face {
+    font-family: "Helvetica Neue normal";
+    src: url("../resources/fonts/Helvetica\ Neue\ W01\ 66\ Medium\ It.ttf");
+    font-weight: normal;
 }

@@ -28,7 +28,38 @@
           ></a>
         </div>
       </header>
-      <main class="main-container"></main>
+      <main class="main-container">
+        <div class="games-container">
+          <p>
+            <span> NEW BET </span> FOR
+            <span id="gameName" class="game-name">dasds</span>
+          </p>
+          <p class="text-lighter">Choose a game</p>
+          <nav class="choose-game-container">
+            <a href="#" class="lotofacil-game"> Lotofácil</a>
+            <a href="#" class="mega-game">Mega-Sena</a>
+            <a href="#" class="lotomania-game">Lotomania</a>
+          </nav>
+          <p>Fill you bet</p>
+          <p class="game-description" id="gameDescription"></p>
+          <div class="numbers-container"></div>
+          <div class="button-line">
+            <div class="button-group">
+              <button>Complete game</button>
+              <button>Clear game</button>
+            </div>
+            <button>Add to cart</button>
+          </div>
+        </div>
+        <div class="cart-container">
+          <h6>Cart</h6>
+          <div class="cart-itens-container"></div>
+          <div class="cart-total-container">
+            <span class="text-bold">Cart</span> <span>Total: R$</span><span id="cartTotal"></span>
+          </div>
+          <button>Save <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </main>
       <footer class="footer-container">Copyright 2021 Luby Software</footer>
     </div>
     <script src="./src/js/index.js"></script>
