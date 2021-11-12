@@ -28,38 +28,85 @@
           ></a>
         </div>
       </header>
+
       <main class="main-container">
-        <div class="games-container">
-          <p>
-            <span> NEW BET </span> FOR
-            <span id="gameName" class="game-name">dasds</span>
+        <div class="choose-game-container">
+          <p class="choose-game-header">
+            <span>NEW BET </span><span class="text-lighter">FOR</span>
+            <span id="gameName" class="text-lighter">MEGA-SENA</span>
           </p>
-          <p class="text-lighter">Choose a game</p>
-          <nav class="choose-game-container">
-            <a href="#" class="lotofacil-game"> Lotofácil</a>
-            <a href="#" class="mega-game">Mega-Sena</a>
-            <a href="#" class="lotomania-game">Lotomania</a>
-          </nav>
-          <p>Fill you bet</p>
-          <p class="game-description" id="gameDescription"></p>
-          <div class="numbers-container"></div>
+          <div class="games-links-container">
+            <p class="text-normal">Choose a game</p>
+            <nav class="games-links">
+              <a href="#" class="game-link lotofacil-game">Lotofácil</a>
+              <a href="#" class="game-link mega-game">Mega-Sena</a>
+              <a href="#" class="game-link lotomania-game">Lotomania</a>
+            </nav>
+          </div>
+          <div class="fill-bet-container">
+            <p class="text-normal">Fill your bet</p>
+            <p class="game-description text-normal" id="gameDescription">
+ <!--   Escolha 15 números para apostar na lotofácil. Você ganha acertando 11, 12, 13, 14 ou 15 números. São muitas chances de ganhar, e agora você joga de onde estiver! -->
+allllllllllllllllllllllaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa     
+</p>
+            <div class="numbers-container">
+              <div class="numbers-line">
+                <div class="number">01</div>
+                <div class="number">01</div>
+                <div class="number">01</div>
+                <div class="number">01</div>
+                <div class="number">01</div>
+                <div class="number">01</div>
+                <div class="number">01</div>
+                <div class="number">01</div>
+                <div class="number">01</div>
+                <div class="number">01</div>
+              </div>
+              <div class="numbers-line">
+                <div class="number">01</div>
+                <div class="number">01</div>
+                <div class="number">01</div>
+                <div class="number">01</div>
+                <div class="number">01</div>
+                <div class="number">01</div>
+                <div class="number">01</div>
+                <div class="number">01</div>
+                <div class="number">01</div>
+                <div class="number">01</div>
+              </div>
+            </div>
+          </div>
           <div class="button-line">
             <div class="button-group">
               <button>Complete game</button>
               <button>Clear game</button>
             </div>
-            <button>Add to cart</button>
+            <button><i class="fa fa-shopping-cart"></i> Add to cart</button>
           </div>
         </div>
         <div class="cart-container">
-          <h6>Cart</h6>
-          <div class="cart-itens-container"></div>
+          <span>Cart</span>
+          <div class="cart-itens-container">
+            <div class="cart-item-container">
+              <button><i class="far fa-trash-alt"></i></button>
+              <div class="line-divisor"></div>
+              <div>
+                <div class="numbers">01,03,04,05,06</div>
+                <div>
+                  <span id="gameType" class="">Mega-Sena</span>
+                  <span id="gameValue">R$ 4,50</span>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="cart-total-container">
-            <span class="text-bold">Cart</span> <span>Total: R$</span><span id="cartTotal"></span>
+            <span class="text-bold">Cart</span> <span>Total: R$</span
+            ><span id="cartTotal"></span>
           </div>
           <button>Save <i class="fas fa-arrow-right"></i></button>
         </div>
       </main>
+
       <footer class="footer-container">Copyright 2021 Luby Software</footer>
     </div>
     <script src="./src/js/index.js"></script>

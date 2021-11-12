@@ -1,3 +1,103 @@
-.main-container{
-    grid-area: 'main';
+.main-container {
+  margin-top: 50px;
+  grid-area: "main";
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "choose-game cart";
+  justify-items: center;
+  justify-content: center;
+}
+
+.choose-game-container {
+  grid-area: "choose-game";
+  display: grid;
+  grid-template-areas:
+    "choose-game-header"
+    "games-links"
+    "fill-bet"
+    "buttons";
+  grid-template-columns: 1fr;
+  grid-template-rows: 35px 80px 1fr 55px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.choose-game-header {
+  grid-area: "choose-game-header";
+}
+.choose-game-header span {
+  color: #707070;
+  font-size: 28px;
+}
+
+.games-links-container {
+  grid-area: "games-links";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  color: var(--textcolor);
+  font-size: 18px;
+}
+.games-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.game-link{
+    width: 110px;
+    height: 35px;
+    border: 2px solid;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 500ms ease-out;
+    font-size: 16px;
+}
+.lotofacil-game{
+    border-color: var(--lotofacil);
+    color: var(--lotofacil);
+}
+.mega-game{
+    border-color: var(--mega);
+    color: var(--mega);
+}
+.lotomania-game{
+    border-color: var(--lotomania);
+    color: var(--lotomania);
+}
+
+.lotofacil-game-selected{
+    background-color: var(--lotofacil);
+    color: white;
+}
+.mega-game-selected{
+    background-color: var(--mega);
+    color: white;
+}
+.lotomania-game-selected{
+    background-color: var(--lotomania);
+    color: white;
+}
+.fill-bet-container {
+  grid-area: fill-bet;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  color: var(--textcolor);
+  font-size: 17px;
+}
+
+.game-description{
+    font-size: 15px;
+    white-space: normal;
+}
+.button-line {
+  grid-area: "buttons";
+}
+.cart-container {
+  grid-area: "cart";
 }

@@ -1,3 +1,9 @@
+:root{
+    --mega : #01AC66;
+    --lotofacil: #7F3992;
+    --lotomania: #F79C31;
+    --textcolor:#707070;
+}
 *,a{
     margin:0;
     padding: 0;
@@ -18,13 +24,19 @@ html,body,.container{
     "header"
     "main"
     "footer";
-    grid-template-columns: auto;
-    grid-template-rows: 70px 1fr 80px ;
-    font-style: italic;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 1fr 80px ;
+    font-style: italic; 
+}
+.text-normal{
+    font-family: "Helvetica Neue normal";
+}
+.text-lighter{
+    font-family: "Helvetica Neue lighter";
 }
 @font-face {
     font-family: "Helvetica Neue bold";
-    src: url(../resources/fonts/Helvetica\ Neue\ LTW0697BlkCnObl.ttf);
+    src: url("../resources/fonts/Helvetica\ Neue\ LTW0697BlkCnObl.ttf");
     font-weight: bold;
 }
 @font-face {
