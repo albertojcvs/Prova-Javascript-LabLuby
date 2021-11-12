@@ -1,11 +1,12 @@
 .main-container {
-  margin-top: 50px;
   grid-area: "main";
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 880px 350px;
   grid-template-rows: 1fr;
   grid-template-areas: "choose-game cart";
   justify-items: center;
+  justify-content: center;
+  align-items: center;
   justify-content: center;
 }
 
@@ -17,11 +18,11 @@
     "games-links"
     "fill-bet"
     "buttons";
-  grid-template-columns: 1fr;
-  grid-template-rows: 35px 80px 1fr 55px;
+  grid-template-columns: 815px;
+  grid-template-rows: 35px 80px 470px 55px;
   align-items: center;
   align-content: center;
-  justify-content: center;
+  justify-items: start;
 }
 .choose-game-header {
   grid-area: "choose-game-header";
@@ -40,64 +41,180 @@
   color: var(--textcolor);
   font-size: 18px;
 }
-.games-links{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.games-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.game-link{
-    width: 110px;
-    height: 35px;
-    border: 2px solid;
-    border-radius: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 500ms ease-out;
-    font-size: 16px;
+.game-link {
+  width: 110px;
+  height: 35px;
+  border: 2px solid;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 500ms ease-out;
+  font-size: 16px;
 }
-.lotofacil-game{
-    border-color: var(--lotofacil);
-    color: var(--lotofacil);
+.lotofacil-game {
+  border-color: var(--lotofacil);
+  color: var(--lotofacil);
 }
-.mega-game{
-    border-color: var(--mega);
-    color: var(--mega);
+.mega-game {
+  border-color: var(--mega);
+  color: var(--mega);
 }
-.lotomania-game{
-    border-color: var(--lotomania);
-    color: var(--lotomania);
+.lotomania-game {
+  border-color: var(--lotomania);
+  color: var(--lotomania);
 }
 
-.lotofacil-game-selected{
-    background-color: var(--lotofacil);
-    color: white;
+.lotofacil-game-selected {
+  background-color: var(--lotofacil);
+  color: white;
 }
-.mega-game-selected{
-    background-color: var(--mega);
-    color: white;
+.mega-game-selected {
+  background-color: var(--mega);
+  color: white;
 }
-.lotomania-game-selected{
-    background-color: var(--lotomania);
-    color: white;
+.lotomania-game-selected {
+  background-color: var(--lotomania);
+  color: white;
 }
 .fill-bet-container {
   grid-area: fill-bet;
   display: flex;
   flex-direction: column;
   justify-content: start;
-  align-items: center;
+  align-items: flex-start;
   color: var(--textcolor);
-  font-size: 17px;
+  font-size: 22px;
 }
 
-.game-description{
-    font-size: 15px;
-    white-space: normal;
+.game-description {
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  white-space: normal;
+}
+.numbers-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.numbers-line {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.number {
+  background-color: #adc0c4;
+  margin-right: 12px;
+  color: white;
+  padding: 25px;
+  border-radius: 1cm;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.number-selected {
 }
 .button-line {
   grid-area: "buttons";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.button-group button {
+  text-align: center;
+  color: #27c383;
+  border: 1px solid #27c383;
+  border-radius: 10px;
+  padding: 8px 16px;
+  background-color: #f7f7f7;
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 12px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+.add-to-cart-button {
+  padding: 8px 16px;
+  color: white;
+  background-color: #27c383;
+  border: 1px solid #27c383;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+.button-line button:active {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
 }
 .cart-container {
   grid-area: "cart";
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 300px;
+  height: 485px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #e2e2e2;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+.cart-container > span {
+  font-size: 26px;
+  color: var(--textcolor);
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.cart-container > button {
+  width: 100%;
+  background-color: #f4f4f4;
+  border: 1px solid #e2e2e2;
+  color: #27c383;
+  height: 95px;
+  font-size: 34px;
+  cursor: pointer;
+}
+
+.cart-itens-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cart-item{
+  margin-left: 20px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.cart-item button{
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+}
+.game-info{
+  border-left: 2px solid black;
+  padding-left: 2px;
 }

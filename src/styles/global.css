@@ -13,6 +13,9 @@
 
 }
 
+button{
+    cursor: pointer;
+}
 html,body,.container{
     background-color: #F7F7F7;
     width: 100%;
@@ -25,7 +28,7 @@ html,body,.container{
     "main"
     "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 80px 1fr 80px ;
+    grid-template-rows: 70px 1fr 70px ;
     font-style: italic; 
 }
 .text-normal{
