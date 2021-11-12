@@ -1,3 +1,4 @@
+@import url("./cart.css");
 .main-container {
   grid-area: "main";
   display: grid;
@@ -163,58 +164,4 @@
 }
 .button-line button:active {
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
-}
-.cart-container {
-  grid-area: "cart";
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 300px;
-  height: 485px;
-  background-color: white;
-  border-radius: 10px;
-  border: 1px solid #e2e2e2;
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
-}
-.cart-container > span {
-  font-size: 26px;
-  color: var(--textcolor);
-  margin-top: 20px;
-  margin-left: 20px;
-}
-
-.cart-container > button {
-  width: 100%;
-  background-color: #f4f4f4;
-  border: 1px solid #e2e2e2;
-  color: #27c383;
-  height: 95px;
-  font-size: 34px;
-  cursor: pointer;
-}
-
-.cart-itens-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.cart-item{
-  margin-left: 20px;
-  margin-bottom: 16px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-}
-.cart-item button{
-  font-size: 30px;
-  background-color: transparent;
-  border: none;
-}
-.game-info{
-  border-left: 2px solid black;
-  padding-left: 2px;
 }
