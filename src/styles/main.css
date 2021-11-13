@@ -48,15 +48,17 @@
   justify-content: space-between;
 }
 .game-link {
-  width: 110px;
+  width: 130px;
   height: 35px;
   border: 2px solid;
   border-radius: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 500ms ease-out;
-  font-size: 16px;
+  transition: background 500ms ease;
+  font-size: 18px;
+  margin-right: 10px;
+  padding: 5px;
 }
 .lotofacil-game {
   border-color: var(--lotofacil);
@@ -70,12 +72,15 @@
   border-color: var(--lotomania);
   color: var(--lotomania);
 }
-
-.lotofacil-game-selected {
+ #lotofacilOption:checked ~ .lotofacil-game{ 
   background-color: var(--lotofacil);
   color: white;
 }
-.mega-game-selected {
+#lotomaniaOption:checked ~ .lotomania-game {
+  background-color: var(--lotomania);
+  color: white;
+}
+#megaOption:checked ~.mega-game{
   background-color: var(--mega);
   color: white;
 }
