@@ -14,7 +14,7 @@ module.exports = {
   },
   devServer: {
     static: {
-      directory: path.join(__dirname, "public"),
+      directory: path.join(__dirname, "src"),
     },
     compress: true,
     port: 9000,
@@ -25,11 +25,21 @@ module.exports = {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"],
+          },
+        },
+      },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "index.html"),
+      template: path.resolve(__dirname, "src", "index.html"),
     }),
   ],
 };

@@ -68,24 +68,24 @@
   border-color: var(--mega);
   color: var(--mega);
 }
-.lotomania-game {
-  border-color: var(--lotomania);
-  color: var(--lotomania);
+.quina-game {
+  border-color: var(--quina);
+  color: var(--quina);
 }
  #lotofacilOption:checked ~ .lotofacil-game{ 
   background-color: var(--lotofacil);
   color: white;
 }
-#lotomaniaOption:checked ~ .lotomania-game {
-  background-color: var(--lotomania);
+#quinaOption:checked ~ .quina-game {
+  background-color: var(--quina);
   color: white;
 }
 #megaOption:checked ~.mega-game{
   background-color: var(--mega);
   color: white;
 }
-.lotomania-game-selected {
-  background-color: var(--lotomania);
+.quina-game-selected {
+  background-color: var(--quina);
   color: white;
 }
 .fill-bet-container {

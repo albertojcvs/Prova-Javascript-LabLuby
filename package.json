@@ -7,6 +7,10 @@
   "private": true,
   "license": "MIT",
   "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
     "file-loader": "^6.2.0",
     "style-loader": "^3.3.1",
@@ -16,8 +20,10 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
-    "add": "^2.0.6",
     "html-webpack-plugin": "^5.5.0",
     "yarn": "^1.22.17"
+  },
+  "scripts": {
+    "dev": "yarn webpack server"
   }
 }

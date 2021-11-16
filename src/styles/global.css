@@ -1,7 +1,7 @@
 :root{
     --mega : #01AC66;
     --lotofacil: #7F3992;
-    --lotomania: #F79C31;
+    --quina: #F79C31;
     --textcolor:#707070;
 }
 *,a{
@@ -16,9 +16,9 @@
 button{
     cursor: pointer;
 }
-.lotomania{
-    color: var(--lotomania);
-    border-color: var(--lotomania);
+.quina{
+    color: var(--quina);
+    border-color: var(--quina);
 }
 .mega{
     color: var(--mega);

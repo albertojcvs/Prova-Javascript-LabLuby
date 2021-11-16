@@ -4,14 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="./src/resources/fontawesome-free-5.15.4-web/css/all.css"
-    />
-    <link rel="stylesheet" href="./src/styles/global.css" />
-    <link rel="stylesheet" href="./src/styles/header.css" />
-    <link rel="stylesheet" href="./src/styles/main.css" />
-    <link rel="stylesheet" href="./src/styles/footer.css" />
     <title>Prova Javascript</title>
   </head>
   <body>
@@ -33,85 +25,25 @@
         <div class="choose-game-container">
           <p class="choose-game-header">
             <span>NEW BET </span><span class="text-lighter">FOR</span>
-            <span id="gameName" class="text-lighter">MEGA-SENA</span>
+            <span id="gameName" class="text-lighter"></span>
           </p>
           <div class="games-links-container">
             <p class="text-normal">Choose a game</p>
             <nav class="games-links">
-              <input type="radio"  name="gameOption" id="lotofacilOption">
+              <input type="radio" name="gameOption" id="lotofacilOption" checked>
               <input type="radio" name="gameOption" id="megaOption">
-              <input type="radio" name="gameOption" id="lotomaniaOption">
+              <input type="radio" name="gameOption" id="quinaOption">
               <label for="lotofacilOption" class="game-link lotofacil-game" ">Lotofácil</label>
               <label for="megaOption" class="game-link mega-game" >Mega-Sena</label>
-              <label for="lotomaniaOption" class="game-link lotomania-game" >Lotomania</label>
+              <label for="quinaOption" class="game-link quina-game" >Quina</label>
             </nav>
           </div>
-          <div class="fill-bet-container">
+          <div class="fill-bet-container" id="betContainer">
             <p class="text-normal">Fill your bet</p>
             <p class="game-description text-normal" id="gameDescription">
-              Escolha 15 números para apostar na lotofácil. Você ganha acertando 11, 12, 13, 14 ou 15 números. São muitas chances de ganhar, e agora você joga de onde estiver!
             </p>
-            <div class="numbers-container">
-              <div class="numbers-line">
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-              </div>
-              <div class="numbers-line">
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-              </div>
-              <div class="numbers-line">
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-              </div>
-              <div class="numbers-line">
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-              </div>
-              <div class="numbers-line">
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-                <div class="number">01</div>
-              </div>
+            <div class="numbers-container" id="numbersContainer">
+  
             </div>
           </div>
           <div class="button-line">
@@ -200,7 +132,6 @@
 
       <footer class="footer-container">Copyright 2021 Luby Software</footer>
     </div>
-    <script src="./src/js/index.js"></script>
-    <script src="./src/js/loadInformations.js"></script>
+    <script src="./js/index.js" type="module"></script>
   </body>
 </html>
