@@ -1,3 +1,5 @@
+import { getGame, getNameOfGameSelected } from "../../utils";
+
 export function createNumberElement(value){
   if (value < 10) value = '0' + value;
 

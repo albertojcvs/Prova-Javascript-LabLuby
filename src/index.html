@@ -51,7 +51,7 @@
               <button class="text-normal" id="completeGameButton">Complete game</button>
               <button class="text-normal" id="clearGameButton">Clear game</button>
             </div>
-            <button class="text-normal add-to-cart-button">
+            <button id="addToCartButton" class="text-normal add-to-cart-button">
               <i class="fa fa-shopping-cart" style="color: white"></i> Add to
               cart
             </button>
@@ -59,72 +59,11 @@
         </div>
         <div class="cart-container">
           <span>Cart</span>
-          <div class="cart-itens-container">
-            <div class="cart-item">
-              <button><i class="far fa-trash-alt"></i></button>
-              <div class="game-info game-info-mega">
-                <div class="game-info-numbers">
-                  <div>01,03,04,05,06</div>
-                </div>
-                <div>
-                  <span id="gameType" class="mega">Mega-Sena</span>
-                  <span id="gameValue" class="text-normal">R$ 4,50</span>
-                </div>
-              </div>
-            </div>
-            <div class="cart-item">
-              <button><i class="far fa-trash-alt"></i></button>
-              <div class="game-info game-info-mega">
-                <div class="numbers">
-                  <div>01,03,04,05,06</div>
-                </div>
-                <div>
-                  <span id="gameType" class="mega">Mega-Sena</span>
-                  <span id="gameValue" class="text-normal">R$ 4,50</span>
-                </div>
-              </div>
-            </div>
-            <div class="cart-item">
-              <button><i class="far fa-trash-alt"></i></button>
-              <div class="game-info game-info-mega">
-                <div class="game-info-numbers">
-                  <div>01, 03, 04, 05, 06, 08, 09, 10, 11, 12, 13</div>
-                </div>
-                <div>
-                  <span id="gameType" class="mega">Mega-Sena</span>
-                  <span id="gameValue" class="text-normal">R$ 4,50</span>
-                </div>
-              </div>
-            </div>
-            <div class="cart-item">
-              <button><i class="far fa-trash-alt"></i></button>
-              <div class="game-info game-info-mega">
-                <div class="game-info-numbers">
-                  <div>01,03,04,05,06,08,09,10,11</div>
-                </div>
-                <div>
-                  <span id="gameType" class="mega">Mega-Sena</span>
-                  <span id="gameValue" class="text-normal">R$ 4,50</span>
-                </div>
-              </div> 
-            </div>
-            <div class="cart-item">
-              <button><i class="far fa-trash-alt"></i></button>
-              <div class="game-info game-info-mega">
-                <div class="game-info-numbers">
-                  <div>01,03,04,05,06,08,09,10,11</div>
-                </div>
-                <div>
-                  <span id="gameType" class="mega">Mega-Sena</span>
-                  <span id="gameValue" class="text-normal">R$ 4,50</span>
-                </div>
-              </div> 
-            </div>
-          </div>
+          <div class="cart-itens-container" id="cartItensContainer"></div>
           <div class="cart-total-container">
             <span class="text-bold">CART</span>
-            <span class="text-normal" style="font-style: normal">TOTAL: R$</span
-            ><span id="cartTotal" class="text-normal">12,00</span>
+            <span class="text-normal" style="font-style: normal">TOTAL: R$ </span
+            ><span id="cartTotal" class="text-normal">0.00</span>
           </div>
           <button>Save <i class="fas fa-arrow-right"></i></button>
         </div>

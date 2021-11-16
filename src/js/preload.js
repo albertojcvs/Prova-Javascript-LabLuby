@@ -1,6 +1,8 @@
+import { addToCart } from "./addTocart";
 import { clearGame } from "./clearGame";
 import { completeGame } from "./completeGame";
 import { setGame } from "./setGame";
+import { getGame, getNameOfGameSelected } from "./utils";
 
 export default function preload() {
   const lotofacilOption = document.getElementById("lotofacilOption");
@@ -18,4 +20,7 @@ export default function preload() {
 
   const completeGameButton = document.getElementById("completeGameButton");
   completeGameButton.onclick = completeGame;
+
+  const addToCarButton = document.getElementById("addToCartButton");
+  addToCarButton.onclick = addToCart;
 }

@@ -1,5 +1,12 @@
-import gamesData from '../data/games.json'
+import gamesData from "../data/games.json";
 
-export function getGame(name){
-    return gamesData.types.filter(game => game.type === name)[0];
+export function getNameOfGameSelected() {
+  const gameSelectedID = document.querySelector(
+    "input[name=gameOption]:checked"
+  ).id;
+  return document.querySelector(`label[for=${gameSelectedID}]`).textContent;
+}
+
+export function getGame(name) {
+  return gamesData.types.filter((game) => game.type === name)[0];
 }
