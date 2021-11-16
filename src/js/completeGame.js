@@ -17,7 +17,9 @@ export function completeGame() {
     const numbersNotSelected = Array.from(
       document.querySelectorAll(".number:not(.number-selected)")
     );
-    const randomNumber = Math.ceil(Math.random() * numbersNotSelected.length);
+    console.log(numbersNotSelected);
+    const randomNumber = Math.ceil(Math.random() * (numbersNotSelected.length-1));
+    console.log(randomNumber);
     numbersNotSelected[randomNumber].classList.add("number-selected");
   }
 }
