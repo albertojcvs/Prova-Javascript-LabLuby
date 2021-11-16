@@ -1,0 +1,157 @@
+.choose-game-container {
+    grid-area: "choose-game";
+    display: flex;
+    flex-direction: column;
+  
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .choose-game-header span {
+    color: #707070;
+    font-size: 28px;
+  }
+  
+  .games-links-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: var(--textcolor);
+    font-size: 18px;
+    margin-top: 5px;
+  }
+  .games-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 0;
+  }
+  .game-link {
+    width: 130px;
+    height: 35px;
+    border: 2px solid;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 500ms ease;
+    font-size: 18px;
+    margin-right: 10px;
+    padding: 5px;
+  }
+  .lotofacil-game {
+    border-color: var(--lotofacil);
+    color: var(--lotofacil);
+  }
+  .mega-game {
+    border-color: var(--mega);
+    color: var(--mega);
+  }
+  .quina-game {
+    border-color: var(--quina);
+    color: var(--quina);
+  }
+  #lotofacilOption:checked ~ .lotofacil-game {
+    background-color: var(--lotofacil);
+    color: white;
+  }
+  #quinaOption:checked ~ .quina-game {
+    background-color: var(--quina);
+    color: white;
+  }
+  #megaOption:checked ~ .mega-game {
+    background-color: var(--mega);
+    color: white;
+  }
+  .quina-game-selected {
+    background-color: var(--quina);
+    color: white;
+  }
+  .fill-bet-container {
+    flex: 1;
+    grid-area: fill-bet;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    color: var(--textcolor);
+    font-size: 22px;
+  }
+  
+  .game-description {
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  
+    white-space: normal;
+  }
+  .numbers-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .numbers-line {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .number {
+    background-color: #adc0c4;
+    margin-right: 12px;
+    color: white;
+    padding: 25px;
+    border: 2px solid #adc0c4;
+    border-radius: 1cm;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    transition: background 200ms;
+  }
+  
+  .number-selected {
+    color: #adc0c4;
+    background-color: white;
+  }
+  .button-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .button-group button {
+    text-align: center;
+    color: #27c383;
+    border: 1px solid #27c383;
+    border-radius: 10px;
+    padding: 8px 16px;
+    background-color: #f7f7f7;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 12px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+  }
+  .add-to-cart-button {
+    padding: 8px 16px;
+    color: white;
+    background-color: #27c383;
+    border: 1px solid #27c383;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+  }
+  .button-line button:active {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
