@@ -8,5 +8,6 @@
   grid-template-rows: 1fr;
   grid-template-areas: "choose-game cart";
   justify-content: center;
+  justify-items: center;
 }
 
