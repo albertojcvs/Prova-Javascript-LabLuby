@@ -5,5 +5,8 @@ export function createNumberElement(value){
   const element = document.createElement('div')
     element.classList.add('number');
     element.innerText = value;
+    element.onclick = () =>{
+      element.classList.toggle('number-selected');
+    }
   return element;
 }

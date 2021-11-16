@@ -1,3 +1,4 @@
+import { clearGame } from "./clearGame";
 import { setGame} from "./setGame";
 
 export default function preload(){
@@ -10,5 +11,8 @@ export default function preload(){
     quinaOption.onclick = () => setGame('quina');
 
     setGame('lotofacil')
+
+    const clearGameButton = document.getElementById('clearGameButton');
+    clearGameButton.onclick = clearGame
 
 }
