@@ -1,6 +1,7 @@
 import { addToCart } from "./addTocart";
 import { clearGame } from "./clearGame";
 import { completeGame } from "./completeGame";
+import { save } from "./save";
 import { setGame } from "./setGame";
 import { getGame, getNameOfGameSelected } from "./utils";
 
@@ -23,4 +24,7 @@ export default function preload() {
 
   const addToCarButton = document.getElementById("addToCartButton");
   addToCarButton.onclick = addToCart;
+
+  const saveButton = document.getElementById('saveButton');
+  saveButton.onclick = save;
 }

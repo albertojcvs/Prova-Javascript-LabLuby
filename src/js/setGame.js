@@ -14,7 +14,6 @@ export function setGame(gameName) {
     if (i % 10 == 0) {
       if (line) numbersContainer.append(line);
       line = createNumbersLineElement();
-      console.log('passou');
     }
     const numberElement = createNumberElement(String(i + 1));
     line.append(numberElement);
