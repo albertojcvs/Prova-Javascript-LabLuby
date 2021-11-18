@@ -3,13 +3,16 @@ import { createNumberElement } from "./elements/number";
 import { getGame } from "./utils";
 export function setGame(gameName) {
   const numbersContainer = document.getElementById("numbersContainer");
+  
   const gameData = getGame(gameName);
   const gameNameElement = document.getElementById("gameName");
+  
   const gameDescriptionElement = document.getElementById("gameDescription");
 
   gameNameElement.innerText = gameData.type.toUpperCase();
   gameDescriptionElement.innerText = gameData.description;
   numbersContainer.innerHTML = "";
+  
   const numbersPerLine = 10;
   for (
     let i = "",line, contador = 10;

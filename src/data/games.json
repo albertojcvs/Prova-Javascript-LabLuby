@@ -24,6 +24,14 @@
       "price": 2,
       "max-number": 5,
       "color": "#F79C31"
+    },
+    {
+      "type":"Timemania",
+      "description":"Escolha 10 números e 1 time do coração. Você ganha acertando 7, 6, 5, 4 ou 3 números ou acertando o time",
+      "range":80,
+      "price":3,
+      "max-number":10,
+      "color":"#FBDB30"
     }
   ]
 }

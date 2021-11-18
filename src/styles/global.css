@@ -1,33 +1,21 @@
 :root{
-    --mega : #01AC66;
-    --lotofacil: #7F3992;
-    --quina: #F79C31;
+
     --textcolor:#707070;
 }
-*,a{
+*,a,li{
     margin:0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     font-family:  "Helvetica Neue bold";
+    list-style: none;
 
 }
 
 button,label{
     cursor: pointer;
 }
-.quina{
-    color: var(--quina);
-    border-color: var(--quina);
-}
-.mega{
-    color: var(--mega);
-    border-color: var(--mega);
-}
-.lotofacil{
-    color: var(--lotofacil);
-    border-color: var(--lotofacil);
-}
+
 html,body,.container{
     background-color: #F7F7F7;
     width: 100%;

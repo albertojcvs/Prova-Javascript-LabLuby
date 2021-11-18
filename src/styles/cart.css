@@ -95,15 +95,6 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
-.game-info-mega {
-  border-color: var(--mega);
-}
-.game-info-quina {
-  border-color: var(--quina);
-}
-.game-info-lotofacil {
-  border-color: var(--lotofacil);
-}
 .cart-total-container{
     font-size: 25px;
     color: var(--textcolor) ;

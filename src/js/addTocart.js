@@ -4,11 +4,7 @@ import { getCartItemData } from "./getCartItemData";
 import { isGamesEqual } from "./isGamesEqual";
 import { getGame, getNameOfGameSelected } from "./utils";
 
-function getGameType(type) {
-  if (type === "Lotofácil") return "lotofacil";
-  if (type === "Mega-Sena") return "mega";
-  if (type === "Quina") return "quina";
-}
+
 
 export function addToCart() {
   const cartItens = Array.from(document.getElementsByClassName("cart-item"));
@@ -26,10 +22,10 @@ export function addToCart() {
   } 
   
   const newGameData = {
-    game: getGameType(gameSelected),
     numbers: selectedNumbers,
     price: gameData.price,
     type: gameData.type,
+    color: gameData.color
   };
 
   let isGameAlreadyAdded = false;
