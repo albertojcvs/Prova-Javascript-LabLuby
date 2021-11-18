@@ -17,7 +17,7 @@ export function createNumberElement(value) {
     const gameName = getNameOfGameSelected();
     const gameData = getGame(gameName);
     if (
-      document.getElementsByClassName("number-selected").length ===
+      document.querySelectorAll(".number[numberSelected]").length ===
       gameData["max-number"]
     ) {
       alert("Você já selecionou o máximo de números para o jogo!");

@@ -23,11 +23,8 @@ export function addToCart() {
   
   if (selectedNumbers.length < gameData["max-number"]) {
     return alert(`Você deve selecionar mais ${gameData["max-number"] - selectedNumbers.length} ${ gameData["max-number"] - selectedNumbers.length > 1 ? 'números':'número'}!`);
-  } else if (selectedNumbers.length > gameData["max-number"]) {
-    return alert(`Você deve selecionar apenas ${gameData["max-number"]} números
-    `);
-  }
-
+  } 
+  
   const newGameData = {
     game: getGameType(gameSelected),
     numbers: selectedNumbers,

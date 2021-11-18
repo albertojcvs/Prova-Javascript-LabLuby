@@ -1,10 +1,10 @@
 @import url("./cart.css");
 @import url("./choose-game.css");
 .main-container {
-  margin-top: 30px;
+  margin-top: 50px;
   grid-area: "main";
   display: grid;
-  grid-template-columns: 890px 350px;
+  grid-template-columns: 800px 350px;
   grid-template-rows: 1fr;
   grid-template-areas: "choose-game cart";
   justify-content: center;
