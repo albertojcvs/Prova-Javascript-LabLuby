@@ -41,6 +41,12 @@
   overflow-y: scroll;
   
 }
+.cart-empty{
+  margin-top: 100px;
+  text-align: center;
+  font-size: 26px;
+  color: var(--textcolor);
+}
 .cart-itens-container::-webkit-scrollbar{
   width: 6px;
 }

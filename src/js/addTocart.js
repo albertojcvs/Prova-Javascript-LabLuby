@@ -26,13 +26,14 @@ export function addToCart() {
     price: gameData.price,
     name: gameData.type,
   });
-
+  const cartemptyMessage = document.getElementById("cartEmptyMessage");
+  cartemptyMessage.style.display = 'none';
   const cartItensContainer = document.getElementById("cartItensContainer");
   cartItensContainer.append(newCartItem);
 
   const totalElement = document.getElementById("cartTotal");
   totalElement.textContent = Number(
-    parseFloat(totalElement.textContent) + parseFloat(gameData.price)
+    parseFloat(totalElement.textContent.replace(',','.')) + parseFloat(gameData.price)
   ).toLocaleString(undefined, {
     minimumFractionDigits: 2,
     maximumFractionDigits: 2,
