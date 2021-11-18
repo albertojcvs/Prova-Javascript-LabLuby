@@ -9,7 +9,7 @@ export function createCartItem(props) {
         <div>${props.numbers.join(", ")}</div>
       </div>
       <div>
-        <span id="gameType" class="${props.game}">${props.name}</span>
+        <span id="gameType" class="${props.game}">${props.type}</span>
         <span id="gamePrice" class="text-normal">R$ ${props.price.toLocaleString(
           undefined,
           {
