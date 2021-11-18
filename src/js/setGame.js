@@ -10,16 +10,19 @@ export function setGame(gameName) {
   gameNameElement.innerText = gameData.type.toUpperCase();
   gameDescriptionElement.innerText = gameData.description;
   numbersContainer.innerHTML = "";
-  for (let i = "", line; i <= gameData.range; i++) {
-    if (i % 10 == 0) {
+  const numbersPerLine = 10;
+  for (
+    let i = "",line, contador = 10;
+    i <= gameData.range;
+    i++, contador++
+  ) {
+    if (contador === numbersPerLine || i == gameData.range) {
+      contador = 0;
       if (line) numbersContainer.append(line);
       line = createNumbersLineElement();
     }
     const numberElement = createNumberElement(String(i + 1));
     line.append(numberElement);
   }
+  
 }
-
-export function setMegaGame() {}
-
-export function setLotomaniaGame() {}
