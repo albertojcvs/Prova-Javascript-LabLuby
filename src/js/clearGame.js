@@ -1,11 +1,11 @@
 export function clearGame() {
     const numbersElementSelected =
-       Array.from(document.getElementsByClassName("number-selected"));
+       Array.from(document.querySelectorAll(".number[numberSelected]"));
 
-    for( const numberElement of numbersElementSelected){
-        
-    numberElement.classList.remove('number-selected');
-    }
+   numbersElementSelected.forEach(numberElement => {
+       numberElement.removeAttribute("numberSelected");
+       numberElement.style.backgroundColor = '#ADC0C4';
+   })
 
 }
 

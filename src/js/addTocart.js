@@ -14,9 +14,10 @@ export function addToCart() {
   const cartItens = Array.from(document.getElementsByClassName("cart-item"));
 
   const selectedNumbers = Array.from(
-    document.getElementsByClassName("number-selected")
+    document.querySelectorAll(".number[numberSelected]")
   ).map((element) => element.textContent);
-  
+    
+  console.log(selectedNumbers);
   const gameSelected = getNameOfGameSelected();
   const gameData = getGame(gameSelected);
   

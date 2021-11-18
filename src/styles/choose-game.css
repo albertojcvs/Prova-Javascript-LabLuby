@@ -105,7 +105,6 @@
     margin-right: 12px;
     color: white;
     padding: 25px;
-    border: 2px solid #adc0c4;
     border-radius: 1cm;
     font-size: 22px;
     cursor: pointer;
@@ -113,10 +112,6 @@
     transition: background 200ms;
   }
   
-  .number-selected {
-    color: #adc0c4;
-    background-color: white;
-  }
   .button-line {
     display: flex;
     justify-content: space-between;
