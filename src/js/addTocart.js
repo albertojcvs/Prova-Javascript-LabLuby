@@ -31,6 +31,7 @@ export function addToCart() {
     price: gameData.price,
     type: gameData.type,
   };
+
   let isGameAlreadyAdded = false;
   cartItens.forEach((cartItem) => {
     if (isGamesEqual(newGameData, getCartItemData(cartItem))) {
@@ -43,6 +44,7 @@ export function addToCart() {
     clearGame();
     return alert("Você já adicionou essa aposta!");
   }
+  
   const newCartItem = createCartItem(newGameData);
 
   const cartemptyMessage = document.getElementById("cartEmptyMessage");
