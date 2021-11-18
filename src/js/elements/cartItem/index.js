@@ -10,14 +10,18 @@ export function createCartItem(props) {
       </div>
       <div>
         <span id="gameType" class="${props.game}">${props.name}</span>
-        <span id="gamePrice" class="text-normal">R$ ${props.price.toFixed(
-          2
+        <span id="gamePrice" class="text-normal">R$ ${props.price.toLocaleString(
+          undefined,
+          {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2,
+          }
         )}</span>
       </div>
     </div>
   </div>`;
   element.querySelector("button").onclick = function () {
-    deleteCartItem(element,props.price);
+    deleteCartItem(element, props.price);
   };
   return element;
 }

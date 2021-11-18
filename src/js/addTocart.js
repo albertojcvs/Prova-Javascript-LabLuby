@@ -32,6 +32,10 @@ export function addToCart() {
 
   const totalElement = document.getElementById("cartTotal");
   totalElement.textContent = Number(
-    Number(totalElement.innerText) + Number(gameData.price)).toFixed(2);
+    parseFloat(totalElement.textContent) + parseFloat(gameData.price)
+  ).toLocaleString(undefined, {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  });
   clearGame();
 }
